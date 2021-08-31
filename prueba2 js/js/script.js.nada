@@ -1,0 +1,43 @@
+function validar(){
+
+var usuario= document.getElementById('id_usuario').value
+var contraseña= document.getElementById('id_contraseña').value
+
+
+
+
+if (usuario.length == '') {
+    document.getElementById('id_error1').innerText  = 'Usuario incorrecto'
+} else {
+    document.getElementById('id_error1').innerText  = ''
+}
+
+if (contraseña.length == '') {
+    document.getElementById('id_error2').innerText  = 'Contraseña incorrecta'
+} else {
+    document.getElementById('id_error2').innerText  = ''
+}
+
+
+
+if(usuario != 'usuario') {
+    document.getElementById('id_error1').innerText  = 'Usuario incorrecto'
+} else {
+    document.getElementById('id_error1').innerText  = ''
+}
+
+
+if(contraseña != '1zapatito') {
+    document.getElementById('id_error2').innerText  = 'Contraseña incorrecta'
+} else {
+    document.getElementById('id_error2').innerText  = ''
+}
+
+
+if (usuario === 'usuario' && contraseña === '1zapatito' ) { 
+    return true  
+} else {
+    return false
+}
+
+}
